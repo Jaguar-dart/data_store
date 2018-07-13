@@ -1,0 +1,17 @@
+name: jaguar_data_store
+version: 2.1.1
+description: DB agnostic abstraction of CRUD over a specific model/document/table.
+
+authors:
+- Ravi Teja Gudapati <tejainece@gmail.com>
+- Kevin Segaud <segaud.kevin@gmail.com>
+homepage: http://jaguar-dart.github.io
+
+environment:
+  sdk: ">=2.0.0-dev.60.0 <3.0.0"
+
+dependencies:
+  http: ^0.11.3
+  jaguar_client: ^2.1.1
+  jaguar_serializer: ^2.1.8
+  jaguar_common: ^0.2.2
