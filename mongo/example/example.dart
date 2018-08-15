@@ -10,7 +10,7 @@ import 'package:jaguar_data_store/client.dart';
 import 'package:http/http.dart' as http;
 import 'package:jaguar_mongo/jaguar_mongo.dart';
 
-final pool = MongoPool("mongodb://localhost:27017/example");
+final pool = MongoPool("mongodb://localhost:27018/example");
 
 @Controller(path: '/api')
 class ExampleApi {
@@ -19,7 +19,7 @@ class ExampleApi {
       new MongoResource('posts', serializer, mongoSerializer, pool: pool);
 }
 
-Future<Null> server() async {
+Future<void> server() async {
   final server = Jaguar(port: 10000);
 
   server.add(reflect(ExampleApi()));
@@ -30,7 +30,7 @@ Future<Null> server() async {
 
 const String kAuthority = 'http://localhost:10000';
 
-Future<Null> client() async {
+Future<void> client() async {
   final client = new http.Client();
   final ResourceClient<String, Post> rC = new ResourceClient<String, Post>(
       client, serializer,

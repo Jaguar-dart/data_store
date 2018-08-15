@@ -1,5 +1,5 @@
 name: jaguar_mongo_data_store
-version: 2.1.1
+version: 2.2.0
 description: Data store (CRUD abstraction) implementation for MongoDb
 authors:
 - Ravi Teja Gudapati <tejainece@gmail.com>
@@ -7,19 +7,19 @@ authors:
 homepage: http://jaguar-dart.github.io
 
 environment:
-  sdk: ">=2.0.0-dev.60.0 <3.0.0"
+  sdk: ">=2.0.0 <3.0.0"
 
 dependencies:
-  jaguar_data_store: ^2.1.1
-  jaguar: ^2.1.18
-  jaguar_serializer: ^2.1.8
-  mongo_dart: ^0.3.2
-  jaguar_mongo: ^2.1.1
+  jaguar_data_store: ^2.2.0
+  jaguar: ^2.2.4
+  jaguar_serializer: ^2.2.0
+  mongo_dart: ^0.3.3
+  jaguar_mongo: ^2.2.0
 
 dev_dependencies:
   test: ^1.2.0
   jaguar_serializer_mongo: ^2.1.1
-  jaguar_reflect: ^2.1.4
+  jaguar_reflect: ^2.2.0
   http: ^0.11.3
   build_runner: ^0.9.0
-  jaguar_serializer_cli: ^2.1.24
+  jaguar_serializer_cli: ^2.2.0

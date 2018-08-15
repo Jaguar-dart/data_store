@@ -5,7 +5,7 @@ import 'package:mongo_dart/mongo_dart.dart' as mgo;
 import 'package:jaguar_mongo_data_store/jaguar_mongo_data_store.dart';
 import '../common/model.dart';
 
-final String kMongoUrl = "mongodb://localhost:27017/example";
+final String kMongoUrl = "mongodb://localhost:27018/example";
 
 main() async {
   // Create and open a connection to mongo
