@@ -21,6 +21,16 @@ abstract class DataStore<IdType, ModelType extends Idied<IdType>> {
   FutureOr<int> removeById(IdType id);
 
   FutureOr<int> removeAll();
+
+  /// Insert event fired when a new records is inserted.
+  Stream<ModelType> get onInsert;
+
+  /// Update event fired when a new
+  Stream<ModelType> get onUpdate;
+
+  Stream<ModelType> get onRemove;
+
+  Stream<void> get onRemoveAll;
 }
 
 abstract class DataStoreOffsetPaginated<IdType, ModelType extends Idied<IdType>>
